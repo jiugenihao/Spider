@@ -113,8 +113,9 @@ if __name__ == "__main__":
     
     # 2.同步修改的proto文件到客户端
     match_list, name_list = FindFilesByExt(svr_proto_path, ".proto")
-    PrintList(name_list)
+    #PrintList(name_list)
     diff_files = FindDiffFiles(svr_proto_path, cli_proto_path, name_list)
+    print("不同的proto文件：")
     PrintList(diff_files)
     
     for diff in diff_files:
