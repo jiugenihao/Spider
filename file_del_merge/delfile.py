@@ -89,7 +89,7 @@ if __name__ == "__main__":
     
     #####################################################################################
     #keys    = ["CopyUpdate", "JjcReward", "MseManual", "MseUpdateSkill"]
-    keys    = ["CombatSweep"]
+    keys    = ["ElevateCard"]
         
     # 1.获取包含关键字的所有文件
     proto_dirs  = []
@@ -112,15 +112,15 @@ if __name__ == "__main__":
     PrintList(deal_dirs)
     
     # 2.删除proto pb deal文件
-    RemoveFiles(proto_dirs)
-    RemoveFiles(pb_dirs)
-    RemoveFiles(deal_dirs)
+    #RemoveFiles(proto_dirs)
+    #RemoveFiles(pb_dirs)
+    #RemoveFiles(deal_dirs)
     
     # 3.删除工程文件中的引用
-    for name in proto_names:
-        RemoveLineByWord(abs_e_proj, name, 0)
-        RemoveLineByWord(abs_e_filter, name, 2)
-        RemoveLineByWord(abs_g_proj, name, 0)
-        RemoveLineByWord(abs_g_filter, name, 2)
-        pass
-    pass
+    #for name in proto_names:
+    #    RemoveLineByWord(abs_e_proj, name, 0)
+    #    RemoveLineByWord(abs_e_filter, name, 2)
+    #    RemoveLineByWord(abs_g_proj, name, 0)
+    #    RemoveLineByWord(abs_g_filter, name, 2)
+    #    pass
+    #pass
