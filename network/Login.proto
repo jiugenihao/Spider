@@ -1,0 +1,15 @@
+syntax = "proto2";
+
+message MceAuth 
+{
+    optional string uniqueid   = 1; // 惟一索引 与web平台一致
+    optional string token = 2 ;
+    required int32  accounttype = 3;
+	optional string deviceid = 4;
+	optional string versionflag = 5;
+	optional string channle= 6;
+	optional string sdkid = 7;
+	optional string openid = 8;
+	optional string subpackage = 9;
+	required int32  serverid = 10;  // 进入的游戏服务器ID
+}
