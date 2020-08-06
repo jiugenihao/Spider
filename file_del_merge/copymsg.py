@@ -99,10 +99,10 @@ def PrintList(list):
 
 if __name__ == "__main__":
     svr_proto_path = "C:/DragonGirls/DragonGirlsServer/trunk/DragonGirlServer/Game/ProtoMessage/"
-    cli_proto_path = "c:/DragonGirls/DragonGirlsConfig/工具/前端proto/__proto/"
+    cli_proto_path = "c:/DragonGirls/DragonGirlsConfig/Tools/ClientProto/__proto/"
     
     svr_msg = "c:/DragonGirls/DragonGirlsServer/trunk/DragonGirlServer/Game/event/MessageDef.h"
-    cli_msg = "c:/DragonGirls/DragonGirlsConfig/工具/前端proto/__proto/_Protocol.proto"
+    cli_msg = "c:/DragonGirls/DragonGirlsConfig/Tools/ClientProto/__proto/_Protocol.proto"
     copy_lines = []
     diff_files = []
     
